@@ -1,0 +1,565 @@
+
+<html>
+<head>
+
+<title>Student registration</title>
+</head>
+
+<body>
+<h1 align="center" ><font color="#0000FF">Veer Bahadur Singh Purvanchal University, Jaunpur</h1>
+<h3>Registration</h3>
+<fieldset class="field">
+<table>
+  <caption>
+  </caption>
+  <tbody>
+    <tr>
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td>Complete the fields below. Then click Preview. Click Cancel to return to Admin without submitting information.*Fields marked with an asterisk are required</td>
+    </tr>
+    <tr>
+      <td style="background-color: #D8DEEB">Name</td>
+    </tr>
+    <tr>
+      <td><table width="75%">
+        <tbody>
+          <tr>
+            <td width="11%">First Name *</td>
+            <td width="3%">:</td>
+            <td width="51%"><input name="txtfirst_name" type="text" />
+            </td>
+            <td width="14%">STUDENT ROLLNO. *</td>
+            <td width="5%">:</td>
+            <td width="16%"><input name="txt_previous_stu_code" type="text" />
+            </td>
+          </tr>
+          <tr>
+            <td width="11%">Middle Name</td>
+            <td width="3%">:</td>
+            <td width="51%"><input name="txtmiddle_name" type="text"/></td>
+            
+          </tr>
+          <tr>
+            <td width="11%">Last Name</td>
+            <td width="3%">:</td>
+            <td width="51%"><input name="txtlast_name" type="text"/></td>
+          </tr>
+        </tbody>
+      </table></td>
+    </tr>
+    <tr>
+      <td style="background-color: #D8DEEB">General Details</td>
+    </tr>
+    <tr>
+      <td><table width="97%">
+        <tbody>
+          <tr>
+            <td width="8%">Form No.</td>
+            <td width="2%">:</td>
+            <td width="38%"><input name="txtform_no" type="text" id="txtform_no"  />             </td>
+            <td width="10%">Main Course</td>
+            <td width="5%">:</td>
+            <td width="37%"><select name="ddlcourse" >
+              
+              <option value="0">Select</option>
+             
+              <option value="1">MBA</option>
+             
+              <option value="2">MBA(BE)</option>
+            
+              <option value="3">MBA(HRD)</option>
+             
+              <option value="4">MBA(F&amp;C)</option>
+           
+              <option value="5">B.Tech(Electrical Engg.)</option>
+            
+              <option value="6">MBA(Agri. Business)</option>
+           
+              <option value="7">MBA(E. COMMERCE)</option>
+             
+              <option value="8">MHRD</option>
+           
+              <option value="9">M.SC(BIOTECH)</option>
+            
+              <option value="10">M.SC(MICROBIOLOGY)</option>
+             
+              <option value="11">M.SC(BIOCHEMESTRY)</option>
+             
+              <option value="12">M.SC(ENVIROMENTAL SCIENCE)</option>
+            
+              <option value="13">MA(APPLIED PSYCHOLOGY)</option>
+          
+              <option value="14">MA(MASS COMMUNICATION)</option>
+          
+              <option value="15">MCA</option>
+             
+              <option value="16">B.TECH(MECHANICAL ENGG.)</option>
+             
+              <option value="17">B.TECH(ELECTRONICS &amp; COMMUNICATION ENGG.)</option>
+           
+              <option value="18">B.TECH(ELECTRONICS &amp; INSTRUMENTATION ENGG.)</option>
+           
+              <option value="19">B.TECH(COMPUTER SCIENCE &amp; ENGG.)</option>
+         
+              <option value="20">B.TECH(INFORMATION TECHNOLOGY)</option>
+           
+              <option value="21">B.PHARM</option>
+              
+              <option value="22">D.Pharma</option>
+             
+              <option value="23">M.TECH(CSE)</option>
+         
+              <option value="24">M.TECH(COMMUNICATION)</option>
+           
+              <option value="25">M.TECH(POWER SYSTEM)</option>
+           
+              <option value="26">M.TECH(THERMAL ENGG)</option>
+           
+              <option value="27">B.COM(HONS)</option>
+            
+              <option value="28">BCA</option>
+             
+              <option value="29">M.TECH(MATERIAL SCIENCE TECH)</option>
+             
+              <option value="30">B.SC(ZOO BOT CHEM ENV)</option>
+           
+              <option value="31">B.SC(PHY CHEM MATHS)</option>
+          
+              <option value="32">B.SC(PHY MATHS GEOLOGY)</option>
+         
+              <option value="33">B.A. L.L.B.(HONS)</option>
+         
+              <option value="34">M.SC(PHY)</option>
+          
+              <option value="35">M.SC(CHEM)</option>
+            
+              <option value="36">M.SC(MATHS)</option>
+            
+              <option value="37">M.SC(APPLIED GEOLOGY)</option>
+             
+              <option value="38">M.Sc(Atmospheric Science)</option>
+             
+              <option value="40">B.Sc(Biotechnology)</option>
+             
+            </select>              </td>
+          </tr>
+          <tr>
+            <td width="8%">Year</td>
+            <td width="2%">:</td>
+            <td width="38%"><select name="ddlbranch">
+              
+              <option value="0">Select</option>
+			  
+             
+              <option value="1">First year</option>
+             
+              <option value="2">Secound year</option>
+            
+              <option value="3">Third year</option>
+             
+              
+            </select>
+            <td width="10%"><span id="lbl_batch">Batch</span></td>
+            <td width="5%">:</td>
+            <td width="37%"><select name="ddl_batch">
+              <option value="0">2019-2020</option>
+              
+              <option value="1">2020-2021</option>
+              
+              <option value="2">2021-2022</option>
+              
+              <option value="3">2022-2023</option>
+              
+            </select></td>
+          </tr>
+          <tr>
+            
+            <td width="8%">Fee Submission Type</td>
+            <td>:</td>
+            <td width="38%"><table id="pay">
+              <tbody>
+                <tr>
+                  <td><input id="pay_0" type="radio" name="pay" value="Y" checked="checked" />
+                          <label for="pay_0">Yearly</label></td>
+                  <td><input id="pay_1" type="radio" name="pay" value="S" />
+                          <label for="pay_1">Sememster Wise</label></td>
+                </tr>
+              </tbody>
+            </table></td>
+          </tr>
+          <tr>
+            
+            <td colspan="3"> <ul>
+              <li> <font color="#FF0000">No Scholarship will be given in the case of SemesterWise Fee Submission.</li>
+            </ul></td>
+          </tr>
+          <tr>
+            <td width="8%">Enrollment No.</td>
+            <td width="2%">:</td>
+            <td width="38%"><input name="txt_enrollment_no" type="text"  />
+            </td>
+          </tr>
+          <tr>
+            <td width="8%">Cast Category *</td>
+            <td width="2%">:</td>
+            <td width="38%"><select name="ddl_cast" >
+              
+              <option value="0">Select</option>
+              
+              <option value="1">GENERAL</option>
+              
+              <option value="2">OBC</option>
+              
+              <option value="3">SC</option>
+              
+              <option value="5">ST</option>
+              
+            </select>
+            </td>
+            
+          </tr>
+          <tr>
+            <td width="8%">College Name *</td>
+            <td width="2%">:</td>
+            <td width="38%"><select name="ddl_college_name" >
+              
+              <option value="0">Select</option>
+              
+              <option selected="selected" value="2">Veer Bahadur Singh Purvanchal University</option>
+              
+            </select>
+            </td>
+            <td width="10%">Student Type *</td>
+            <td width="5%">:</td>
+            <td width="37%"><select name="ddl_stu_type" >
+              
+              <option value="0">--Select--</option>
+              
+              <option selected="selected" value="R">Regular</option>
+              
+              <option value="S">Additional Seat</option>
+              
+              <option value="U">Through UPTU</option>
+              
+              <option value="L">Lateral Entry</option>
+              
+            </select>
+            </td>
+          </tr>
+          <tr>
+            <td width="8%">Subject Offered</td>
+            <td width="2%">:</td>
+            <td width="38%"><textarea name="txt_subject" rows="2" cols="20" id="txt_subject"></textarea>
+            </td>
+            
+          </tr>
+        </tbody>
+      </table></td>
+    </tr>
+    <tr>
+      <td style="background-color: #D8DEEB">Personal Details</td>
+    </tr>
+    <tr>
+      <td>
+	  <table width="96%">
+        <tbody>
+          <tr>
+            <td >DOB</td>
+            <td >:</td>
+            <td ><input name="txt_dob" type="text" id="txt_dob" value="dd/mm/yyyy"/>
+            <td width="18%" >Gender *</td>
+            <td width="4%" >:</td>
+            <td width="19%" ><p>
+              <select name="ddl_gender" >
+                
+                <option value="0">Select</option>
+                
+                <option value="M">Male</option>
+                
+                <option value="F">Female</option>
+              </select>
+</p> </td>
+          </tr>
+          <tr>
+            <td colspan="6"></td>
+          </tr>
+          <tr>
+            <td width="8%">Language Known</td>
+            <td width="2%">:</td>
+            <td width="23%"><input name="txt_language" type="text" /></td>
+            <td >Image<br/>
+            <input type="file" name="FileUpload_person"  /></td>
+            <td></td>
+		
+            <td width="19%"><p>Signature 
+                  <input type="file" name="FileUpload_sign"  />
+            </p>            </td>
+				<td width="26%"></td>
+          </tr>
+          <tr>
+            <td width="8%">Religion</td>
+            <td width="2%">:</td>
+            <td width="23%"><select name="ddl_religious" >
+         
+              <option value="0">Select</option>
+             
+              <option value="1">Hindu</option>
+             
+              <option value="2">Muslim</option>
+            
+              <option value="3">Sikh</option>
+             
+              <option value="4">Christian</option>
+             
+            </select></td>
+          </tr>
+          <tr>
+            <td width="8%" height="62">Minority</td>
+            <td width="2%">:</td>
+            <td width="23%"><p></p>
+            <p>
+              <select name="ddl_minority" >
+                <option value="N">No</option>
+                <option value="Y">Yes</option>
+              </select>
+            </p></td>
+        </table>  
+    </tr>
+          <tr>
+            <td style="background-color: #D8DEEB" colspan="6">Family Details</td>
+          </tr>
+          <tr>
+            <td colspan="6"><div>
+             
+                <tbody>
+              <tr>
+                    <td><table width="120%" height="102">
+                      <tbody>
+                        <tr>
+                          <td  width="6%">Relationship</td>
+                          <td width="2%">:</td>
+                          <td width="92%"><select name="relationship" >
+                          
+                            <option value="0">Select</option>
+                         
+                            <option value="Father">Father</option>
+                            
+                            <option value="Mother">Mother</option>
+                         
+                            <option value="Brother">Brother</option>
+                          
+                            <option value="Sister">Sister</option>
+                         
+                            <option value="Grand Father">Grand Father</option>
+                       
+                            <option value="Grand Mother">Grand Mother</option>
+                          
+                          </select>
+                          
+                        
+                      
+         
+          <tr>
+            <td width="6%">Guardian Name</td>
+            <td width="2%">:</td>
+            <td width="92%"><input name="txt_guardian" type="text"  /></td>
+           </tr>
+		   <tr>
+		    <td width="6%">Relation</td>
+            <td width="2%">:</td>
+            <td width="92%"><input name="txt_relation" type="text"  /></td>
+          </tr>
+          <tr>
+            <td width="6%">Annual Income</td>
+            <td width="2%">:</td>
+            <td width="92%"><input name="txt_annual_income" type="text" /></td>
+            
+          </tr>
+        </tbody>
+      </table></td>
+    </tr>
+    <tr>
+      
+       
+        <tbody>
+            <tr>
+              <td width="1225" style="background-color: #D8DEEB">Contact Details</td>
+            </tr>
+           
+            <tr>
+              <td><table width="100%">
+                <tbody>
+                  <tr>
+                    <td width="7%">Address</td>
+                    <td width="3%">:</td>
+                    <td width="37%" rowspan="2" valign="top"><textarea name="address" rows="2" cols="20" id="address"></textarea></td>
+                    <td width="9%">State</td>
+                    <td width="4%">:</td>
+                    <td width="40%"><select name="ddl_state"  id="ddl_state">
+                        <option selected="selected" value="0">Select</option>
+                        <option value="1">Uttar Pradesh</option>
+                        <option value="2">Andhra Pradesh</option>
+                        <option value="3">Panjab</option>
+                        <option value="4">Arunachal Pradesh</option>
+                        <option value="5">Assam</option>
+                        <option value="6">Bihar</option>
+                        <option value="7">Chhattisgarh</option>
+                        <option value="8">Goa</option>
+                        <option value="9">Gujarat</option>
+                        <option value="10">Haryana</option>
+                        <option value="11">Himachal Pradesh</option>
+                        <option value="12">Jammu and Kashmir</option>
+                        <option value="13">Jharkhand</option>
+                        <option value="14">Karnataka</option>
+                        <option value="15">Kerala</option>
+                        <option value="16">Madya Pradesh</option>
+                        <option value="17">Maharashtra</option>
+                        <option value="18">Manipur</option>
+                        <option value="19">Meghalaya</option>
+                        <option value="20">Mizoram</option>
+                        <option value="21">Nagaland</option>
+                        <option value="22">Orissa</option>
+                        <option value="23">Rajasthan</option>
+                        <option value="24">Sikkim</option>
+                        <option value="25">Tamil Nadu</option>
+                        <option value="26">Tripura</option>
+                        <option value="27">Uttaranchal</option>
+                        <option value="28">West Bengal</option>
+                        <option value="29">Delhi</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+				  <tr></tr>
+                <td width="7%">City</td>
+                    <td width="3%">:</td>
+                    <td width="37%"><input name="txt_pincode" type="text" id="txt_pincode" />
+                  </tr>
+                  <tr>
+                    <td width="7%">Pincode</td>
+                    <td width="3%">:</td>
+                    <td width="37%"><input name="txt_pincode" type="text"  /></td>
+                    <td width="9%">Mobile No.</td>
+                    <td width="4%">:</td>
+                    <td width="40%"><input name="txt_mobile_no" type="text" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="7%">Phone No.</td>
+                    <td width="3%">:</td>
+                    <td width="37%"><input name="txt_phone_no" type="text"  /></td>
+                    <td width="9%">Fax No.</td>
+                    <td width="4%">:</td>
+                    <td width="40%"><input name="txt_fax_no" type="text"  /></td>
+                  </tr>
+                  <tr>
+                    <td width="7%">E-Mail</td>
+					<td width="3%">:</td>
+				    <td width="37%"><input name="txt_fax_no" type="text"  /></td>
+                  <tr>
+                    <td colspan="6"><ul>
+                        <li><font color="#FF0000">PLEASE MENTION CORRECT EMAIL ID AND MOBILE NO. AS THE PASSWORD WILL BE SEND TO THE SAME .</font></li>
+                    </ul></td>
+                  </tr>
+				  </table>
+				  <table>
+                <td style="background-color: #D8DEEB">Professional Details</td>
+                </tr>
+                <tr>
+                  <td><div>
+                      <table cellspacing="0" id="grd_proffessional_details">
+                        <tbody>
+                          <tr>
+                            <th align="left" scope="col">Exam Name</th>
+                            <th align="left" scope="col">Board / University</th>
+                            <th align="left" scope="col">Roll No.</th>
+                            <th align="left" scope="col">Year</th>
+                            <th align="left" scope="col">College Name</th>
+                            <th align="left" scope="col">Marks</th>
+                            <th align="left" scope="col">Percentage</th>
+                          </tr>
+                          <tr>
+                            <td align="left"><input name="exam_name" type="text" value="High School" id="exam_name_0" disabled="disabled" /></td>
+                            <td align="left"><input name="board" type="text" id="board_0" />
+                            </td>
+                            <td align="left"><input name="roll_no" type="text" id="roll_no_0" />
+                            </td>
+                            <td align="left"><input name="passing_year" type="text" id="passing_year_0" />
+                            </td>
+                            <td align="left"><input name="college_name" type="text" id="college_name_0" />
+                            </td>
+                            <td align="left"><input name="marks" type="text" id="marks_0" />
+                            </td>
+                            <td align="left"><input name="maximum_mark" type="text" id="maximum_mark_0"  /></td>
+                          </tr>
+                          <tr>
+                            <td align="left"><input name="exam_name" type="text" value="Intermedate" id="exam_name_1" disabled="disabled" /></td>
+                            <td align="left"><input name="board" type="text" id="board_1" />
+                            </td>
+                            <td align="left"><input name="roll_no" type="text" id="roll_no_1" />
+                            </td>
+                            <td align="left"><input name="passing_year" type="text" id="passing_year_1" />
+                            </td>
+                            <td align="left"><input name="college_name" type="text" id="college_name_1" />
+                            </td>
+                            <td align="left"><input name="marks" type="text" id="marks_1" />
+                            </td>
+                            <td align="left"><input name="maximum_mark" type="text" id="maximum_mark_1"  /></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div></td>
+                </tr>
+                <tr>
+                  <td><table width="501">
+                      <tbody>
+                        <tr>
+                          <td width="17%">Specialisation</td>
+                          <td width="6%">:</td>
+                          <td width="77%"><input name="txt_specialisation" type="text"/></td>
+                        </tr>
+                      </tbody>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td style="background-color: #D8DEEB">Facilities</td>
+                </tr>
+                <tr>
+                  <td><table>
+                      <tbody>
+                        <tr>
+                          <td align="left">Hostel</td>
+                          <td align="center" width="5%">:</td>
+                          <td align="left" width="28%"><input id="chk_hostel" type="checkbox" name="chk_hostel" /></td>
+                          <td align="left"></td>
+                          <td></td>
+                          <td align="left" width="28%"></td>
+                        </tr>
+                        <tr>
+                          <td align="left">Library</td>
+                          <td align="center" width="5%">:</td>
+                          <td align="left" width="28%"><input id="chk_library" type="checkbox" name="chk_library" /></td>
+                          <td></td>
+                          <td></td>
+                          <td width="28%"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td width="1222" align="center"><br />
+                                <input type="submit" name="btnPreview" value="submit" id="btnPreview" />
+                                <input type="submit" name="btnPreviewCancel" value="Cancel" id="btnPreviewCancel" /></td>
+                          </tr>
+                        </tbody>
+                    </table></td>
+                </tr>
+              </table>
+              
+            </fieldset>
+</body>
+
+</html>
